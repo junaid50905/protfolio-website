@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lekton', sans-serif;
+  color: white;
+  background-color: #161616;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#wrapper {
+  background-color: #161616;
+}
+
+#wrapper #main {
+  padding: 10vh 0;
+  position: relative;
+}
+
+#wrapper #main #navigation {
+  position: absolute;
+  width: 80px;
+  top: 15vh;
+  left: 20px;
+  background-color: #222222;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+#wrapper #main #navigation nav ul {
+  position: relative;
+}
+
+#wrapper #main #navigation nav ul li {
+  width: 100%;
+  padding: 10px 0;
+}
+
+#wrapper #main #navigation nav ul li:not(:last-child)::after {
+  display: block;
+  content: '';
+  background-image: -webkit-gradient(linear, right top, left top, color-stop(20%, #4b4b4b), to(transparent));
+  background-image: linear-gradient(to left, #4b4b4b 20%, transparent);
+  height: 1px;
+  width: 100%;
+}
+
+#wrapper #main #navigation nav ul li button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#wrapper #main #navigation nav ul li button span {
+  font-size: 12px;
+}
+
+#wrapper #main #navigation nav ul li .nav-link.active {
+  color: yellow !important;
+  background-color: transparent !important;
+  border: 1px solid transparent !important;
+}
+
+#wrapper #main #navigation nav ul li .nav-link:hover {
+  border: 1px solid transparent !important;
+}
+
+#wrapper #main #navigation nav ul#myTab {
+  border: none;
+}
+
+#wrapper #main #person-card-side {
+  -webkit-box-shadow: -20px -20px 0px 1px #2F281B;
+          box-shadow: -20px -20px 0px 1px #2F281B;
+  border-radius: 5px;
+}
+
+#wrapper #main #person-card-side .person-card {
+  background-color: #222222;
+  height: 80vh;
+  border-radius: 5px;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-slider .slider-item {
+  height: 35vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-slider .slider-item::before {
+  display: block;
+  content: '';
+  height: 100%;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .profile-picture {
+  position: relative;
+  height: 80px;
+  width: 100%;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .profile-picture img {
+  border: 3px solid black;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -30%);
+          transform: translate(-50%, -30%);
+  -webkit-box-shadow: -15px 11px 0px 0px rgba(255, 255, 0, 0.486);
+          box-shadow: -15px 11px 0px 0px rgba(255, 255, 0, 0.486);
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .profile-name-designation .typed-content {
+  color: yellow;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .social-links ul li a {
+  color: white;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .cv {
+  display: block;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #4b4b4b), to(transparent));
+  background-image: linear-gradient(to right, #4b4b4b 20%, transparent);
+  height: 1px;
+  width: 100%;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .cv .cv-inside div {
+  cursor: pointer;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .cv .cv-inside div:hover {
+  color: yellow;
+}
+
+#wrapper #main #person-card-side .person-card .person-card-body .person-profile-detailed .cv .cv-inside .download-cv {
+  width: 40%;
+  border-right-width: 1px;
+  border-right-style: solid;
+  display: block;
+  -o-border-image: linear-gradient(to bottom, #4b4b4b, transparent) 1 100%;
+     border-image: -webkit-gradient(linear, left top, left bottom, from(#4b4b4b), to(transparent)) 1 100%;
+     border-image: linear-gradient(to bottom, #4b4b4b, transparent) 1 100%;
+}
+
+#wrapper #main #tab-content {
+  background-color: #2c2c2c;
+  border-radius: 0 5px 5px 0;
+  height: 450px;
+  overflow: auto;
+}
+
+#wrapper #main #tab-content .resume .section_content {
+  position: relative;
+  margin: 20px 0;
+}
+
+#wrapper #main #tab-content .resume .section_content::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #4b4b4b), to(transparent));
+  background-image: linear-gradient(to right, #4b4b4b 20%, transparent);
+}
+
+#wrapper #main #tab-content .resume .section_content .section_content_inside::before {
+  display: block;
+  content: '';
+  height: 100%;
+  width: 1px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #4b4b4b), to(transparent));
+  background-image: linear-gradient(to bottom, #4b4b4b 20%, transparent);
+  position: absolute;
+  left: 50%;
+  top: 0%;
+}
+
+#wrapper #main #tab-content .resume .section_content .section_content_inside .subsection_title .subsection_icon i {
+  font-size: 20px;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  padding: 10px 8px;
+  margin-right: 10px;
+}
+
+.section_title h3 {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.section_title h3::first-letter {
+  color: yellow;
+}
+
+.subsection::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #4b4b4b), to(transparent));
+  background-image: linear-gradient(to right, #4b4b4b 20%, transparent);
+  margin-top: 10px;
+}
+
+.subsection .sub_section_content {
+  padding: 10px 0 20px;
+}
+
+.subsection .sub_section_content .year {
+  border: 1px solid gray;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 2px 5px;
+  margin-top: 10px;
+  font-size: 12px;
+  color: gray;
+}
+
+.subsection .sub_section_content .institute_logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.subsection .sub_section_content .institute_logo .institute {
+  text-transform: capitalize;
+}
+
+.subsection .sub_section_content .place_about_institute {
+  color: gray;
+}
+
+.subsection .sub_section_content .place_about_institute .place {
+  text-transform: capitalize;
+}
+
+.subsection .sub_section_content .place_about_institute .about_institute {
+  font-size: 14px;
+}
+
+.subsection .sub_section_content .certificate {
+  color: white;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.subsection .sub_section_content .certificate:hover {
+  color: yellow;
+}
+
+.current_job {
+  color: yellow !important;
+  border: 1px solid yellow !important;
+}
+/*# sourceMappingURL=style.css.map */

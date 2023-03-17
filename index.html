@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+    <!-- slick -->
+    <link rel="stylesheet" href="/css/slick.css">
+    <!-- slick theme -->
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="/font-awesome/css/all.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/main css/style.css">
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="container-fluid">
+            <main id="main">
+                <div class="row g-0">
+                    <div class="col-md-1">
+                        <div id="navigation">
+                            <nav>
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="about-tab" data-bs-toggle="tab" data-bs-target="#about-tab-pane" type="button" role="tab" aria-controls="about-tab-pane" aria-selected="true">
+                                            <i class="fa-regular fa-user"></i>
+                                            <span>about</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="resume-tab" data-bs-toggle="tab" data-bs-target="#resume-tab-pane" type="button" role="tab" aria-controls="resume-tab-pane" aria-selected="false">
+                                            <i class="fa-solid fa-list"></i>
+                                            <span>resume</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="works-tab" data-bs-toggle="tab" data-bs-target="#works-tab-pane" type="button" role="tab" aria-controls="works-tab-pane" aria-selected="false">
+                                            <i class="fa-solid fa-list"></i>
+                                            <span>wordks</span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                                            <i class="fa-solid fa-list"></i>
+                                            <span>contact</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="person-card-side">
+                            <div class="person-card">
+                                <div class="person-card-slider">
+                                    <div class="slider-item" style="background-image: url('/img//image1.jpg'); border-radius: 1% 1% 40% 40%;"></div>
+                                    <div class="slider-item" style="background-image: url('/img//image2.jpg'); border-radius: 1% 1% 40% 40%;"></div>
+                                    <div class="slider-item" style="background-image: url('/img//image3.jpg'); border-radius: 1% 1% 40% 40%;"></div>
+                                </div>
+                                <div class="person-card-body">
+                                    <div class="person-profile-detailed">
+                                        <div class="profile-picture">
+                                            <img src="/img/profil-picture.webp" alt="">
+                                        </div>
+                                        <div class="profile-name-designation d-flex flex-column justify-content-center align-items-center my-3">
+                                            <h3>Junaid Hossain</h3>
+                                            <div class="typed-content d-flex">
+                                                <span class="typed"></span>
+                                            </div>
+                                        </div>
+                                        <div class="social-links">
+                                            <ul class="d-flex justify-content-center">
+                                                <li class="mx-3">
+                                                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                                                </li>
+                                                <li class="mx-3">
+                                                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                                                </li>
+                                                <li class="mx-3">
+                                                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                                                </li>
+                                                <li class="mx-3">
+                                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cv">
+                                            <div class="cv-inside d-flex justify-content-around">
+                                                <div class="download-cv py-2 ps-4 pe-4">Download CV <i class="fa-solid fa-download"></i></div>
+                                                <div class="contact-me py-2 ps-5 pe-5">Contact me <i class="fa-solid fa-paper-plane"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="content tab-content mt-3" id="tab-content">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade" id="about-tab-pane" role="tabpanel" aria-labelledby="about-tab" tabindex="1">
+                                    <div class="about-me">
+                                        <div class="section_title">
+                                            <h3 class="py-4 px-4">about me</h3>
+                                        </div>
+                                        <div class="section_content py-4 px-4">
+                                            <p><b>Hello! I’m Donald Wellborn.</b></p>
+                                            <p>Back-end & Frond-end developer from UK, London. I have rich experience in wordpress, also I am good at Magento. I love to talk with you about our unique.</p>
+                                            <div class="age-residence-freelance-address" style="font-size: 14px;">
+                                                <table class="w-100 my-3">
+                                                    <tr class="">
+                                                        <td class="w-50">AGE . . . 24</td>
+                                                        <td class="w-50">RESIDENCE . . . Chowrasta, Gazipur</td>
+                                                    </tr>
+                                                    <tr class="">
+                                                        <td class="w-50">FREELANCE . . . Available</td>
+                                                        <td class="w-50">ADDRESS . . . Dhaka, BD</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade active show" id="resume-tab-pane" role="tabpanel" aria-labelledby="resume-tab" tabindex="0">
+                                    <div class="resume">
+                                        <div class="section_title">
+                                            <h3 class="py-4 px-4">resume</h3>
+                                        </div>
+                                        <div class="section_content px-4">
+                                            <div class="section_content_inside">
+                                                <div class="row g-5">
+                                                    <div class="col-md-6">
+                                                        <div class="subsection_title">
+                                                            <div class="subsection_icon d-flex align-items-center py-2">
+                                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                                <h5>Education</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year current_job">2020 - present</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Uttara University</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Dhaka</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year">2016 - 2018</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Alamin Academy School & Collage</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Chandpur</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year">2010 - 2016</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Rampur bazar mojidia high school</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Faridgonj</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="subsection_title">
+                                                            <div class="subsection_icon d-flex align-items-center py-2">
+                                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                                <h5>skill development course</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year current_job">2020 - 2021(1 year)</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Softtech It</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <h6 class="text-warning">Wordpress theme customization and development</h6>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Dhaka</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year">2016 - 2018</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Alamin Academy School & Collage</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Chandpur</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year">2010 - 2016</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Rampur bazar mojidia high school</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Faridgonj</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="section_content px-4">
+                                            <div class="section_content_inside">
+                                                <div class="row g-5">
+                                                    <div class="col-md-6">
+                                                        <div class="subsection_title">
+                                                            <div class="subsection_icon d-flex align-items-center py-2">
+                                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                                <h5>coding</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <h6>skill here</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="subsection_title">
+                                                            <div class="subsection_icon d-flex align-items-center py-2">
+                                                                <i class="fa-solid fa-graduation-cap"></i>
+                                                                <h5>skill development course</h5>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year current_job">2020 - 2021(1 year)</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Softtech It</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <h6 class="text-warning">Wordpress theme customization and development</h6>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Dhaka</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year">2016 - 2018</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Alamin Academy School & Collage</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Chandpur</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="subsection">
+                                                            <div class="sub_section_content">
+                                                                <p class="year">2010 - 2016</p>
+                                                                <div class="institute_logo">
+                                                                    <h6 class="institute">Rampur bazar mojidia high school</h6>
+                                                                    <h5>Logo</h5>
+                                                                </div>
+                                                                <div class="place_about_institute">
+                                                                    <p class="place">Faridgonj</p>
+                                                                    <p class="about_institute">Stanford University Private university in Stanford, California</p>
+                                                                </div>
+                                                                <a href="#" class="certificate">certificate</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="works-tab-pane" role="tabpanel " aria-labelledby="works-tab" tabindex="2">works</div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel " aria-labelledby="contact-tab" tabindex="3">contact</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- slick -->
+    <script src="/js/slick.min.js "></script>
+    <!-- bootstrap -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <!-- typed -->
+    <script src="/js/typed.min.js"></script>
+    <!-- main -->
+    <script src="/js/main js/main.js "></script>
+</body>
+
+</html>
